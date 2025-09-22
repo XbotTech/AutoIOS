@@ -1,0 +1,115 @@
+{
+  "uid" : "278db01b561e9da1",
+  "name" : "test_num_pwd_right",
+  "fullName" : "test_case.test_login.TestLoginPage#test_num_pwd_right",
+  "historyId" : "7f4a57f6d74d36d099b6b45f13ce7c91",
+  "time" : {
+    "start" : 1758181274018,
+    "stop" : 1758181297819,
+    "duration" : 23801
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "_session_faker",
+    "time" : {
+      "start" : 1758181266854,
+      "stop" : 1758181266896,
+      "duration" : 42
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  }, {
+    "name" : "get_driver",
+    "time" : {
+      "start" : 1758181266897,
+      "stop" : 1758181274017,
+      "duration" : 7120
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  } ],
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ {
+      "uid" : "ecf9eaf1a903ef9a",
+      "name" : "log",
+      "source" : "ecf9eaf1a903ef9a.txt",
+      "type" : "text/plain",
+      "size" : 1824
+    } ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : true,
+    "attachmentsCount" : 1,
+    "shouldDisplayMessage" : false
+  },
+  "afterStages" : [ {
+    "name" : "get_driver::0",
+    "time" : {
+      "start" : 1758181297820,
+      "stop" : 1758181298045,
+      "duration" : 225
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  } ],
+  "labels" : [ {
+    "name" : "parentSuite",
+    "value" : "test_case"
+  }, {
+    "name" : "suite",
+    "value" : "test_login"
+  }, {
+    "name" : "subSuite",
+    "value" : "TestLoginPage"
+  }, {
+    "name" : "host",
+    "value" : "smkj"
+  }, {
+    "name" : "thread",
+    "value" : "21688-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "test_case.test_login"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : true,
+  "retry" : true,
+  "extra" : {
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "278db01b561e9da1.json",
+  "parameterValues" : [ ]
+}

@@ -1,0 +1,11 @@
+INFO     mylog:base_page.py:326 调用了 scroll_privacy_agreement 方法, 滑动了隐私协议
+INFO     mylog:base_page.py:290 调用了 find_and_click 方法, 定位方式是 ['resource-id', 'com.blink.blinkfocos:id/privacy_confirm_btn']
+INFO     mylog:base_page.py:290 调用了 find_and_click 方法, 定位方式是 ['XPATH', '//*[@text="账户"]']
+INFO     mylog:base_page.py:290 调用了 find_and_click 方法, 定位方式是 ['XPATH', '//*[@text="请登录"]']
+INFO     mylog:base_page.py:138 点击元素com.blink.blinkfocos:id/type_login成功
+INFO     mylog:base_page.py:311 调用了 find_one_element_exist_click 方法, 定位方式是 ['resource-id', 'com.blink.blinkfocos:id/type_login'],要获取的文本 密码
+INFO     mylog:base_page.py:305 调用了 find_and_send 方法, 定位方式是 ['resource-id', 'com.blink.blinkfocos:id/content'],输入的文本 
+INFO     mylog:base_page.py:305 调用了 find_and_send 方法, 定位方式是 ['resource-id', 'com.blink.blinkfocos:id/ver_code'],输入的文本 
+INFO     mylog:base_page.py:290 调用了 find_and_click 方法, 定位方式是 ['resource-id', 'com.blink.blinkfocos:id/bt_confirm']
+INFO     mylog:base_page.py:293 调用了 find 方法, 定位方式是 ['resource-id', 'com.blink.blinkfocos:id/bt_confirm']
+INFO     mylog:test_login.py:89 获取到提示：false

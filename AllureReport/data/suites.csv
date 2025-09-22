@@ -1,0 +1,7 @@
+"Status","Start Time","Stop Time","Duration in ms","Parent Suite","Suite","Sub Suite","Test Class","Test Method","Name","Description"
+"passed","Fri Sep 19 14:13:46 CST 2025","Fri Sep 19 14:14:08 CST 2025","22497","test_case","test_login","TestLoginPage","","","有效手机号和密码可以登录",""
+"failed","Fri Sep 19 14:15:06 CST 2025","Fri Sep 19 14:15:26 CST 2025","20499","test_case","test_login","TestLoginPage","","","无效手机号和错误密码登录",""
+"passed","Fri Sep 19 14:14:13 CST 2025","Fri Sep 19 14:14:34 CST 2025","20607","test_case","test_login","TestLoginPage","","","有效手机号和错误密码登录",""
+"passed","Fri Sep 19 14:16:19 CST 2025","Fri Sep 19 14:16:37 CST 2025","17894","test_case","test_login","TestLoginPage","","","手机号和密码均为空",""
+"passed","Fri Sep 19 14:15:56 CST 2025","Fri Sep 19 14:16:14 CST 2025","17964","test_case","test_login","TestLoginPage","","","有效手机号为空和错误密码登录",""
+"passed","Fri Sep 19 14:15:31 CST 2025","Fri Sep 19 14:15:50 CST 2025","19067","test_case","test_login","TestLoginPage","","","手机号为空和错误密码登录",""

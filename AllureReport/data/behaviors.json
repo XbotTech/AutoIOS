@@ -1,0 +1,95 @@
+{
+  "uid" : "b1a8273437954620fa374b796ffaacdd",
+  "name" : "behaviors",
+  "children" : [ {
+    "name" : "安卓移动端",
+    "children" : [ {
+      "name" : "登录模块",
+      "children" : [ {
+        "name" : "登录功能的核心流程",
+        "children" : [ {
+          "name" : "有效手机号和密码可以登录",
+          "uid" : "7cc351f93b55d9a6",
+          "parentUid" : "cc99e925da1e67f17f71098b4cebd286",
+          "status" : "passed",
+          "time" : {
+            "start" : 1758262426235,
+            "stop" : 1758262448732,
+            "duration" : 22497
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ ]
+        }, {
+          "name" : "有效手机号和错误密码登录",
+          "uid" : "edf56e1b466578a2",
+          "parentUid" : "cc99e925da1e67f17f71098b4cebd286",
+          "status" : "passed",
+          "time" : {
+            "start" : 1758262453732,
+            "stop" : 1758262474339,
+            "duration" : 20607
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ ]
+        }, {
+          "name" : "无效手机号和错误密码登录",
+          "uid" : "5be7c078af1a60c2",
+          "parentUid" : "cc99e925da1e67f17f71098b4cebd286",
+          "status" : "failed",
+          "time" : {
+            "start" : 1758262506190,
+            "stop" : 1758262526689,
+            "duration" : 20499
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ ]
+        }, {
+          "name" : "手机号为空和错误密码登录",
+          "uid" : "e612b6c03fb928e6",
+          "parentUid" : "cc99e925da1e67f17f71098b4cebd286",
+          "status" : "passed",
+          "time" : {
+            "start" : 1758262531780,
+            "stop" : 1758262550847,
+            "duration" : 19067
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ ]
+        }, {
+          "name" : "有效手机号为空和错误密码登录",
+          "uid" : "5351fa61e2015a33",
+          "parentUid" : "cc99e925da1e67f17f71098b4cebd286",
+          "status" : "passed",
+          "time" : {
+            "start" : 1758262556076,
+            "stop" : 1758262574040,
+            "duration" : 17964
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ ]
+        }, {
+          "name" : "手机号和密码均为空",
+          "uid" : "f6503430109ee98",
+          "parentUid" : "cc99e925da1e67f17f71098b4cebd286",
+          "status" : "passed",
+          "time" : {
+            "start" : 1758262579285,
+            "stop" : 1758262597179,
+            "duration" : 17894
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ ]
+        } ],
+        "uid" : "cc99e925da1e67f17f71098b4cebd286"
+      } ],
+      "uid" : "e9410879d52d0d6ca380e3c47da6287e"
+    } ],
+    "uid" : "14a80d29e22ba2dd48775b7e9d63d5fc"
+  } ]
+}

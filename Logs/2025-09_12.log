@@ -1,0 +1,80 @@
+2025-09-12 15:42:00,722 - base_page.py:[268] - [INFO] - 调用了 scroll_privacy_agreement 方法, 滑动了隐私协议
+2025-09-12 15:42:00,790 - base_page.py:[232] - [INFO] - 调用了 find_and_click 方法, 定位方式是 ['resource-id', 'com.blink.blinkfocos:id/privacy_confirm_btn']
+2025-09-12 15:42:03,274 - base_page.py:[232] - [INFO] - 调用了 find_and_click 方法, 定位方式是 ['XPATH', '//*[@text="账户"]']
+2025-09-12 15:42:05,414 - base_page.py:[232] - [INFO] - 调用了 find_and_click 方法, 定位方式是 ['XPATH', '//*[@text="请登录"]']
+2025-09-12 15:42:07,138 - base_page.py:[102] - [INFO] - 点击元素com.blink.blinkfocos:id/type_login成功
+2025-09-12 15:42:07,140 - base_page.py:[252] - [INFO] - 调用了 find_one_element_exist_click 方法, 定位方式是 ['resource-id', 'com.blink.blinkfocos:id/type_login'],要获取的文本 密码
+2025-09-12 15:42:07,140 - test_login.py:[17] - [ERROR] - 执行登录用例失败，错误：num_pwd_login() missing 1 required positional argument: 'account'
+2025-09-12 15:49:07,778 - base_page.py:[268] - [INFO] - 调用了 scroll_privacy_agreement 方法, 滑动了隐私协议
+2025-09-12 15:49:07,848 - base_page.py:[232] - [INFO] - 调用了 find_and_click 方法, 定位方式是 ['resource-id', 'com.blink.blinkfocos:id/privacy_confirm_btn']
+2025-09-12 15:49:10,317 - base_page.py:[232] - [INFO] - 调用了 find_and_click 方法, 定位方式是 ['XPATH', '//*[@text="账户"]']
+2025-09-12 15:49:12,479 - base_page.py:[232] - [INFO] - 调用了 find_and_click 方法, 定位方式是 ['XPATH', '//*[@text="请登录"]']
+2025-09-12 15:49:13,575 - base_page.py:[102] - [INFO] - 点击元素com.blink.blinkfocos:id/type_login成功
+2025-09-12 15:49:13,575 - base_page.py:[252] - [INFO] - 调用了 find_one_element_exist_click 方法, 定位方式是 ['resource-id', 'com.blink.blinkfocos:id/type_login'],要获取的文本 密码
+2025-09-12 15:49:13,575 - test_login.py:[18] - [ERROR] - 执行登录用例失败，错误：num_pwd_login() missing 1 required positional argument: 'account'
+2025-09-12 15:58:26,568 - base_page.py:[268] - [INFO] - 调用了 scroll_privacy_agreement 方法, 滑动了隐私协议
+2025-09-12 15:58:26,641 - base_page.py:[232] - [INFO] - 调用了 find_and_click 方法, 定位方式是 ['resource-id', 'com.blink.blinkfocos:id/privacy_confirm_btn']
+2025-09-12 15:58:29,108 - base_page.py:[232] - [INFO] - 调用了 find_and_click 方法, 定位方式是 ['XPATH', '//*[@text="账户"]']
+2025-09-12 15:58:31,250 - base_page.py:[232] - [INFO] - 调用了 find_and_click 方法, 定位方式是 ['XPATH', '//*[@text="请登录"]']
+2025-09-12 15:58:32,365 - base_page.py:[102] - [INFO] - 点击元素com.blink.blinkfocos:id/type_login成功
+2025-09-12 15:58:32,366 - base_page.py:[252] - [INFO] - 调用了 find_one_element_exist_click 方法, 定位方式是 ['resource-id', 'com.blink.blinkfocos:id/type_login'],要获取的文本 密码
+2025-09-12 15:58:32,368 - test_login.py:[18] - [ERROR] - 执行登录用例失败，错误：'account_pwd_login'
+2025-09-12 16:00:38,652 - base_page.py:[268] - [INFO] - 调用了 scroll_privacy_agreement 方法, 滑动了隐私协议
+2025-09-12 16:00:38,727 - base_page.py:[232] - [INFO] - 调用了 find_and_click 方法, 定位方式是 ['resource-id', 'com.blink.blinkfocos:id/privacy_confirm_btn']
+2025-09-12 16:00:41,200 - base_page.py:[232] - [INFO] - 调用了 find_and_click 方法, 定位方式是 ['XPATH', '//*[@text="账户"]']
+2025-09-12 16:00:43,336 - base_page.py:[232] - [INFO] - 调用了 find_and_click 方法, 定位方式是 ['XPATH', '//*[@text="请登录"]']
+2025-09-12 16:00:44,452 - base_page.py:[102] - [INFO] - 点击元素com.blink.blinkfocos:id/type_login成功
+2025-09-12 16:00:44,452 - base_page.py:[252] - [INFO] - 调用了 find_one_element_exist_click 方法, 定位方式是 ['resource-id', 'com.blink.blinkfocos:id/type_login'],要获取的文本 密码
+2025-09-12 16:00:46,035 - base_page.py:[246] - [INFO] - 调用了 find_and_send 方法, 定位方式是 ['resource-id', 'com.blink.blinkfocos:id/content'],输入的文本 15371972593
+2025-09-12 16:00:47,614 - base_page.py:[246] - [INFO] - 调用了 find_and_send 方法, 定位方式是 ['resource-id', 'com.blink.blinkfocos:id/ver_code'],输入的文本 jxx83917601
+2025-09-12 16:00:48,993 - base_page.py:[232] - [INFO] - 调用了 find_and_click 方法, 定位方式是 ['resource-id', 'com.blink.blinkfocos:id/bt_confirm']
+2025-09-12 16:00:50,074 - base_page.py:[232] - [INFO] - 调用了 find_and_click 方法, 定位方式是 ['resource-id', 'com.blink.blinkfocos:id/agree_continue']
+2025-09-12 16:01:01,863 - handle_black.py:[28] - [INFO] - 在黑名单中查找元素('xpath', "//android.widget.ImageView[@content-desc='Close']")
+2025-09-12 16:01:12,075 - handle_black.py:[39] - [INFO] - 在黑名单中元素('xpath', "//android.widget.ImageView[@content-desc='Close']")未在页面中定位到
+2025-09-12 16:01:12,075 - handle_black.py:[28] - [INFO] - 在黑名单中查找元素('id', 'com.android.permissioncontroller:id/permission_allow_foreground_only_button')
+2025-09-12 16:01:22,209 - handle_black.py:[39] - [INFO] - 在黑名单中元素('id', 'com.android.permissioncontroller:id/permission_allow_foreground_only_button')未在页面中定位到
+2025-09-12 16:01:22,209 - handle_black.py:[28] - [INFO] - 在黑名单中查找元素('id', 'com.android.permissioncontroller:id/permission_allow_button')
+2025-09-12 16:01:32,436 - handle_black.py:[39] - [INFO] - 在黑名单中元素('id', 'com.android.permissioncontroller:id/permission_allow_button')未在页面中定位到
+2025-09-12 16:01:32,437 - base_page.py:[275] - [ERROR] - 元素定位交互异常，执行的操作是find,传入的参数 定位方式['XPATH', '//*[@content-desc="Edit Avatar"]/following-sibling::android.widget.TextView[1]']::下标None::文本None::等待时间1
+2025-09-12 16:01:32,437 - base_page.py:[276] - [ERROR] - 报错信息是  Message: 元素定位异常
+Stacktrace:
+NoSuchElementError: An element could not be located on the page using the given search parameters.
+    at AndroidUiautomator2Driver.findElOrEls (C:\Program Files\Appium\resources\app\node_modules\appium\node_modules\appium-android-driver\lib\commands\find.js:75:11)
+    at runMicrotasks (<anonymous>)
+    at processTicksAndRejections (internal/process/task_queues.js:85:5)
+2025-09-12 16:01:32,437 - test_login.py:[18] - [ERROR] - 执行登录用例失败，错误：Message: 元素定位异常
+Stacktrace:
+NoSuchElementError: An element could not be located on the page using the given search parameters.
+    at AndroidUiautomator2Driver.findElOrEls (C:\Program Files\Appium\resources\app\node_modules\appium\node_modules\appium-android-driver\lib\commands\find.js:75:11)
+    at runMicrotasks (<anonymous>)
+    at processTicksAndRejections (internal/process/task_queues.js:85:5)
+2025-09-12 16:02:17,720 - base_page.py:[268] - [INFO] - 调用了 scroll_privacy_agreement 方法, 滑动了隐私协议
+2025-09-12 16:02:18,388 - base_page.py:[232] - [INFO] - 调用了 find_and_click 方法, 定位方式是 ['resource-id', 'com.blink.blinkfocos:id/privacy_confirm_btn']
+2025-09-12 16:02:20,255 - base_page.py:[232] - [INFO] - 调用了 find_and_click 方法, 定位方式是 ['XPATH', '//*[@text="账户"]']
+2025-09-12 16:02:22,404 - base_page.py:[232] - [INFO] - 调用了 find_and_click 方法, 定位方式是 ['XPATH', '//*[@text="请登录"]']
+2025-09-12 16:02:23,488 - base_page.py:[102] - [INFO] - 点击元素com.blink.blinkfocos:id/type_login成功
+2025-09-12 16:02:23,489 - base_page.py:[252] - [INFO] - 调用了 find_one_element_exist_click 方法, 定位方式是 ['resource-id', 'com.blink.blinkfocos:id/type_login'],要获取的文本 密码
+2025-09-12 16:02:25,073 - base_page.py:[246] - [INFO] - 调用了 find_and_send 方法, 定位方式是 ['resource-id', 'com.blink.blinkfocos:id/content'],输入的文本 15371972593
+2025-09-12 16:02:26,148 - base_page.py:[246] - [INFO] - 调用了 find_and_send 方法, 定位方式是 ['resource-id', 'com.blink.blinkfocos:id/ver_code'],输入的文本 jxx321
+2025-09-12 16:02:26,714 - base_page.py:[232] - [INFO] - 调用了 find_and_click 方法, 定位方式是 ['resource-id', 'com.blink.blinkfocos:id/bt_confirm']
+2025-09-12 16:02:27,796 - base_page.py:[232] - [INFO] - 调用了 find_and_click 方法, 定位方式是 ['resource-id', 'com.blink.blinkfocos:id/agree_continue']
+2025-09-12 16:02:32,204 - base_page.py:[235] - [INFO] - 调用了 find 方法, 定位方式是 ['XPATH', '//*[@content-desc="Edit Avatar"]/following-sibling::android.widget.TextView[1]']
+2025-09-12 16:02:32,220 - test_login.py:[15] - [INFO] - 获取用户名：jxx
+2025-09-12 16:02:32,220 - test_login.py:[18] - [ERROR] - 执行登录用例失败，错误：assert 'jxx' == 'jxxniupi'
+  - jxxniupi
+  + jxx
+2025-09-12 16:05:52,260 - base_page.py:[268] - [INFO] - 调用了 scroll_privacy_agreement 方法, 滑动了隐私协议
+2025-09-12 16:05:52,325 - base_page.py:[232] - [INFO] - 调用了 find_and_click 方法, 定位方式是 ['resource-id', 'com.blink.blinkfocos:id/privacy_confirm_btn']
+2025-09-12 16:05:54,795 - base_page.py:[232] - [INFO] - 调用了 find_and_click 方法, 定位方式是 ['XPATH', '//*[@text="账户"]']
+2025-09-12 16:05:56,944 - base_page.py:[232] - [INFO] - 调用了 find_and_click 方法, 定位方式是 ['XPATH', '//*[@text="请登录"]']
+2025-09-12 16:05:58,065 - base_page.py:[102] - [INFO] - 点击元素com.blink.blinkfocos:id/type_login成功
+2025-09-12 16:05:58,066 - base_page.py:[252] - [INFO] - 调用了 find_one_element_exist_click 方法, 定位方式是 ['resource-id', 'com.blink.blinkfocos:id/type_login'],要获取的文本 密码
+2025-09-12 16:05:59,659 - base_page.py:[246] - [INFO] - 调用了 find_and_send 方法, 定位方式是 ['resource-id', 'com.blink.blinkfocos:id/content'],输入的文本 15371972593
+2025-09-12 16:06:01,344 - base_page.py:[246] - [INFO] - 调用了 find_and_send 方法, 定位方式是 ['resource-id', 'com.blink.blinkfocos:id/ver_code'],输入的文本 jxx321
+2025-09-12 16:06:02,783 - base_page.py:[232] - [INFO] - 调用了 find_and_click 方法, 定位方式是 ['resource-id', 'com.blink.blinkfocos:id/bt_confirm']
+2025-09-12 16:06:03,864 - base_page.py:[232] - [INFO] - 调用了 find_and_click 方法, 定位方式是 ['resource-id', 'com.blink.blinkfocos:id/agree_continue']
+2025-09-12 16:06:08,294 - base_page.py:[235] - [INFO] - 调用了 find 方法, 定位方式是 ['XPATH', '//*[@content-desc="Edit Avatar"]/following-sibling::android.widget.TextView[1]']
+2025-09-12 16:06:08,305 - test_login.py:[15] - [INFO] - 获取用户名：jxx
+2025-09-12 16:06:08,305 - test_login.py:[18] - [ERROR] - 执行登录用例失败，错误：assert 'jxx' == 'jxxniupi'
+  - jxxniupi
+  + jxx

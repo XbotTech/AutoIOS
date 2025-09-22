@@ -1,0 +1,158 @@
+{
+  "uid" : "7cc351f93b55d9a6",
+  "name" : "有效手机号和密码可以登录",
+  "fullName" : "test_case.test_login.TestLoginPage#test_num_pwd_right",
+  "historyId" : "7f4a57f6d74d36d099b6b45f13ce7c91",
+  "time" : {
+    "start" : 1758262426235,
+    "stop" : 1758262448732,
+    "duration" : 22497
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "get_driver",
+    "time" : {
+      "start" : 1758262420068,
+      "stop" : 1758262426234,
+      "duration" : 6166
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  }, {
+    "name" : "_session_faker",
+    "time" : {
+      "start" : 1758262420028,
+      "stop" : 1758262420068,
+      "duration" : 40
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  } ],
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ {
+      "uid" : "748f5004aa0592c9",
+      "name" : "log",
+      "source" : "748f5004aa0592c9.txt",
+      "type" : "text/plain",
+      "size" : 1698
+    } ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : true,
+    "attachmentsCount" : 1,
+    "shouldDisplayMessage" : false
+  },
+  "afterStages" : [ {
+    "name" : "get_driver::0",
+    "time" : {
+      "start" : 1758262448732,
+      "stop" : 1758262448941,
+      "duration" : 209
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  } ],
+  "labels" : [ {
+    "name" : "story",
+    "value" : "登录功能的核心流程"
+  }, {
+    "name" : "epic",
+    "value" : "安卓移动端"
+  }, {
+    "name" : "feature",
+    "value" : "登录模块"
+  }, {
+    "name" : "parentSuite",
+    "value" : "test_case"
+  }, {
+    "name" : "suite",
+    "value" : "test_login"
+  }, {
+    "name" : "subSuite",
+    "value" : "TestLoginPage"
+  }, {
+    "name" : "host",
+    "value" : "smkj"
+  }, {
+    "name" : "thread",
+    "value" : "26856-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "test_case.test_login"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ {
+      "uid" : "64d1e7167b7832fb",
+      "status" : "passed",
+      "time" : {
+        "start" : 1758249817216,
+        "stop" : 1758249840790,
+        "duration" : 23574
+      }
+    }, {
+      "uid" : "8f4af4f022c4428b",
+      "status" : "passed",
+      "time" : {
+        "start" : 1758182921276,
+        "stop" : 1758182945124,
+        "duration" : 23848
+      }
+    }, {
+      "uid" : "e6d7f9ffeadbd247",
+      "status" : "passed",
+      "time" : {
+        "start" : 1758182158013,
+        "stop" : 1758182180442,
+        "duration" : 22429
+      }
+    }, {
+      "uid" : "278db01b561e9da1",
+      "status" : "passed",
+      "time" : {
+        "start" : 1758181274018,
+        "stop" : 1758181297819,
+        "duration" : 23801
+      }
+    } ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "7cc351f93b55d9a6.json",
+  "parameterValues" : [ ]
+}

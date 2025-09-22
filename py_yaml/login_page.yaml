@@ -1,0 +1,34 @@
+switch_password_login:
+  - action: get_current_auth_mode
+    locator: [ resource-id, 'com.blink.blinkfocos:id/type_login' ]
+    text: '密码'
+    index: ~
+    sleep: 1
+num_pwd_login:
+  - action: find_and_send
+    locator: [ resource-id, 'com.blink.blinkfocos:id/content' ]
+    text: $phone
+    index: ~
+    sleep: 1
+  - action: find_and_send
+    locator: [ resource-id, 'com.blink.blinkfocos:id/ver_code' ]
+    text: $pwd
+    index: ~
+    sleep: ~
+  - action: find_and_click
+    locator: [ resource-id, 'com.blink.blinkfocos:id/bt_confirm' ]
+    text: ~
+    index: ~
+    sleep: ~
+xbg_agree:
+  - action: find_and_click
+    locator: [ resource-id, 'com.blink.blinkfocos:id/agree_continue' ]
+    text: ~
+    index: ~
+    sleep: 1
+is_button_enabled:
+  - action: find
+    locator: [ resource-id, 'com.blink.blinkfocos:id/bt_confirm' ]
+    text: ~
+    index: ~
+    sleep: 1

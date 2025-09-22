@@ -1,0 +1,87 @@
+{
+  "uid" : "83edc06c07f9ae9e47eb6dd1b683e4e2",
+  "name" : "packages",
+  "children" : [ {
+    "name" : "test_case.test_login",
+    "children" : [ {
+      "name" : "有效手机号和密码可以登录",
+      "uid" : "7cc351f93b55d9a6",
+      "parentUid" : "bc19b968b5c7989eda8450dbfaf01ab2",
+      "status" : "passed",
+      "time" : {
+        "start" : 1758262426235,
+        "stop" : 1758262448732,
+        "duration" : 22497
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ ]
+    }, {
+      "name" : "有效手机号和错误密码登录",
+      "uid" : "edf56e1b466578a2",
+      "parentUid" : "bc19b968b5c7989eda8450dbfaf01ab2",
+      "status" : "passed",
+      "time" : {
+        "start" : 1758262453732,
+        "stop" : 1758262474339,
+        "duration" : 20607
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ ]
+    }, {
+      "name" : "无效手机号和错误密码登录",
+      "uid" : "5be7c078af1a60c2",
+      "parentUid" : "bc19b968b5c7989eda8450dbfaf01ab2",
+      "status" : "failed",
+      "time" : {
+        "start" : 1758262506190,
+        "stop" : 1758262526689,
+        "duration" : 20499
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ ]
+    }, {
+      "name" : "手机号为空和错误密码登录",
+      "uid" : "e612b6c03fb928e6",
+      "parentUid" : "bc19b968b5c7989eda8450dbfaf01ab2",
+      "status" : "passed",
+      "time" : {
+        "start" : 1758262531780,
+        "stop" : 1758262550847,
+        "duration" : 19067
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ ]
+    }, {
+      "name" : "有效手机号为空和错误密码登录",
+      "uid" : "5351fa61e2015a33",
+      "parentUid" : "bc19b968b5c7989eda8450dbfaf01ab2",
+      "status" : "passed",
+      "time" : {
+        "start" : 1758262556076,
+        "stop" : 1758262574040,
+        "duration" : 17964
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ ]
+    }, {
+      "name" : "手机号和密码均为空",
+      "uid" : "f6503430109ee98",
+      "parentUid" : "bc19b968b5c7989eda8450dbfaf01ab2",
+      "status" : "passed",
+      "time" : {
+        "start" : 1758262579285,
+        "stop" : 1758262597179,
+        "duration" : 17894
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ ]
+    } ],
+    "uid" : "test_case.test_login"
+  } ]
+}

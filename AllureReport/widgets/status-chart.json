@@ -1,0 +1,61 @@
+[ {
+  "uid" : "7cc351f93b55d9a6",
+  "name" : "有效手机号和密码可以登录",
+  "time" : {
+    "start" : 1758262426235,
+    "stop" : 1758262448732,
+    "duration" : 22497
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "5be7c078af1a60c2",
+  "name" : "无效手机号和错误密码登录",
+  "time" : {
+    "start" : 1758262506190,
+    "stop" : 1758262526689,
+    "duration" : 20499
+  },
+  "status" : "failed",
+  "severity" : "normal"
+}, {
+  "uid" : "edf56e1b466578a2",
+  "name" : "有效手机号和错误密码登录",
+  "time" : {
+    "start" : 1758262453732,
+    "stop" : 1758262474339,
+    "duration" : 20607
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "f6503430109ee98",
+  "name" : "手机号和密码均为空",
+  "time" : {
+    "start" : 1758262579285,
+    "stop" : 1758262597179,
+    "duration" : 17894
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "5351fa61e2015a33",
+  "name" : "有效手机号为空和错误密码登录",
+  "time" : {
+    "start" : 1758262556076,
+    "stop" : 1758262574040,
+    "duration" : 17964
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "e612b6c03fb928e6",
+  "name" : "手机号为空和错误密码登录",
+  "time" : {
+    "start" : 1758262531780,
+    "stop" : 1758262550847,
+    "duration" : 19067
+  },
+  "status" : "passed",
+  "severity" : "normal"
+} ]

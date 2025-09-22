@@ -1,0 +1,26 @@
+{
+  "uid" : "4b4757e66a1912dae1a509f688f20b0f",
+  "name" : "categories",
+  "children" : [ {
+    "name" : "Product defects",
+    "children" : [ {
+      "name" : "AssertionError: assert '用户名不存在' == '用户名或密码错误'\n  - 用户名或密码错误\n  + 用户名不存在",
+      "children" : [ {
+        "name" : "无效手机号和错误密码登录",
+        "uid" : "5be7c078af1a60c2",
+        "parentUid" : "43ff1d791504ed1cef3098fd6b8f4dee",
+        "status" : "failed",
+        "time" : {
+          "start" : 1758262506190,
+          "stop" : 1758262526689,
+          "duration" : 20499
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "43ff1d791504ed1cef3098fd6b8f4dee"
+    } ],
+    "uid" : "8fb3a91ba5aaf9de24cc8a92edc82b5d"
+  } ]
+}
