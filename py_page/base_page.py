@@ -6,7 +6,6 @@ from typing import List
 import yaml
 from appium import webdriver
 from appium.webdriver.common.appiumby import AppiumBy as By
-from appium.webdriver.common.touch_action import TouchAction
 from appium.webdriver.webdriver import WebDriver
 from selenium.common.exceptions import TimeoutException
 from selenium.webdriver.common.action_chains import ActionChains
@@ -29,12 +28,26 @@ class BasePage:
 
         if not driver:  # 如果没有传递driver
             option = AppiumOptions()
-            option.set_capability("platformName", "android")
-            option.set_capability("deviceName", "RFCY505MTLP")
-            option.set_capability("appPackage", "com.blink.blinkfocos")
-            option.set_capability("appActivity", ".SplashActivity")
+            option.set_capability("platformName", "iOS")
+            option.set_capability("deviceName", "iPhone14A")
+            option.set_capability("platformVersion", "18.4.1")
+            option.set_capability("udid", "00008120-000A49C22E0A401E")
+            option.set_capability("automationName", "XCUITest")
+            option.set_capability("bundleId", "Blink.Tech.Blink")
 
-            self.driver = webdriver.Remote('http://127.0.0.1:4723/wd/hub', options=option)
+            self.driver = webdriver.Remote('http://127.0.0.1:8100', options=option)
+            # capabilities = {
+            #     "platformName": "iOS",
+            #     "appium:deviceName": "iPhone14A",
+            #     "appium:platformVersion": "18.4.1",
+            #     "appium:udid": "00008120-000A49C22E0A401E",
+            #     "appium:automationName": "XCUITest",
+            #     "appium:bundleId": "Blink.Tech.Blink",
+            #     "appium:autoAcceptAlerts": True,  # 应该是布尔值，不是字符串
+            #     "appium:autoDismissAlerts": True
+            # }
+            #
+            # self.driver = webdriver.Remote('http://127.0.0.1:4723', )
             self.driver.implicitly_wait(10)
 
         else:
@@ -45,16 +58,18 @@ class BasePage:
     @handle_black
     def find(self, by, locator) -> WebElement:
         by = by.lower()
-        if by == "resource-id":  # resource-id
-            by_locator = (By.ID, locator)
-        elif by == "content-desc":
+        if by == "id" or by == "resource-id":  # iOS 通常用 accessibility id
             by_locator = (By.ACCESSIBILITY_ID, locator)
-        elif by == "class":
+        elif by == "name" or by == "content-desc":  # iOS 中的 name 类似 Android 的 content-desc
+            by_locator = (By.NAME, locator)
+        elif by == "class" or by == "class-name":
             by_locator = (By.CLASS_NAME, locator)
         elif by == "xpath":
             by_locator = (By.XPATH, locator)
-        elif by == "uam":
-            by_locator = (By.ANDROID_UIAUTOMATOR, locator)
+        elif by == "predicate":  # iOS 特有的 Predicate 定位，功能强大
+            by_locator = (By.IOS_PREDICATE, locator)
+        elif by == "class-chain":  # iOS 特有的 Class Chain 定位
+            by_locator = (By.IOS_CLASS_CHAIN, locator)
         else:
             raise AttributeError(f"元素定位方式未找到，你传入的是{by}")
         # ele = self.driver.find_elements(*by_locator)
@@ -66,14 +81,18 @@ class BasePage:
     @handle_black
     def finds(self, by, locator) -> List[WebElement]:
         by = by.lower()
-        if by == "resource-id":  # resource-id
-            by_locator = (By.ID, locator)
-        elif by == "content-desc":
+        if by == "id" or by == "resource-id":  # iOS 通常用 accessibility id
             by_locator = (By.ACCESSIBILITY_ID, locator)
-        elif by == "class":
+        elif by == "name" or by == "content-desc":  # iOS 中的 name 类似 Android 的 content-desc
+            by_locator = (By.NAME, locator)
+        elif by == "class" or by == "class-name":
             by_locator = (By.CLASS_NAME, locator)
         elif by == "xpath":
             by_locator = (By.XPATH, locator)
+        elif by == "predicate":  # iOS 特有的 Predicate 定位，功能强大
+            by_locator = (By.IOS_PREDICATE, locator)
+        elif by == "class-chain":  # iOS 特有的 Class Chain 定位
+            by_locator = (By.IOS_CLASS_CHAIN, locator)
         else:
             raise AttributeError(f"元素定位方式未找到，你传入的是{by}")
         # ele = self.driver.find_element(*by_locator)
@@ -138,7 +157,30 @@ class BasePage:
             logger.info(f"点击元素{locator}成功")
         else:
             logger.info(f"元素{locator}不存在,跳过.....")
-            pass
+            ...
+
+    def switch_login_method(self, text):
+        """
+        切换登录方式（密码/验证码）
+        :param target_method: "密码" 或 "验证码"
+        """
+        # 定位当前显示的按钮
+        current_button = self.find(
+            'xpath',
+            '//XCUIElementTypeButton[@name="密码" or @name="验证码"]'
+        )
+
+        # 获取当前按钮的文本
+        current_text = current_button.get_attribute("name")
+        print(f"获取到的按钮文本为:{current_text}")
+
+        # 判断是否需要切换
+        if text not in current_text:
+            current_button.click()
+            logger.info(f"点击了切换按钮: {text}")
+        else:
+            logger.info(f"当前已经是: {text}，无需切换")
+
 
     # 查找单个元素，输入文本
     @handle_black
@@ -216,48 +258,47 @@ class BasePage:
 
         self.driver.swipe(x1, y1, x2, y2, t)
 
-    # 隐私协议专用滑动
-    def scroll_privacy_agreement(self, times):
+    # ios隐私协议专用滑动
+    def scroll_privacy_agreement(self, index):
         # 获取当前屏幕尺寸
-        window_size = self.driver.get_window_size()
-        screen_width = window_size['width']
-        screen_height = window_size['height']
+        for i in range(index):
+            print(f"滑动尝试 {i + 1}")
+            prompt_xpath = '//XCUIElementTypeStaticText[@name="请仔细阅读并滑动到底部"]'
 
-        # 计算比例
-        start_x_ratio = 0.47
-        start_y_ratio = 0.67
-        end_y_ratio = 0.33
-        times = int(times)
-        # 使用比例滑动（适配任意设备）
-        for _ in range(times):
-            new_start_x = screen_width * start_x_ratio
-            new_start_y = screen_height * start_y_ratio
-            new_end_y = screen_height * end_y_ratio
+            text_view = self.driver.find_element(By.XPATH, prompt_xpath)
+            rect = text_view.rect
+            print(f"元素位置: {rect}")
 
-            # action = TouchAction(self.driver)
-            # action.press(x=new_start_x, y=new_start_y).wait(500).move_to(x=new_start_x, y=new_end_y).release().perform()
-            # time.sleep(0.5)
+            self.driver.find_element(By.XPATH, prompt_xpath).click()
+            time.sleep(0.5)
+            print("检测到提示元素，正在点击...")
 
-            # 使用W3C标准的触摸操作
-            actions = ActionChains(self.driver)
-            actions.w3c_actions = ActionBuilder(self.driver, mouse=PointerInput(interaction.POINTER_TOUCH, "touch"))
+            # 计算坐标
+            # 获取手机屏幕尺
 
-            # 移动到起始位置并按下
-            actions.w3c_actions.pointer_action.move_to_location(new_start_x, new_start_y)
-            actions.w3c_actions.pointer_action.pointer_down()
+            # 计算滑动坐标
+            center_x = rect['x'] + rect['width'] / 2  # 元素水平中心
+            start_y = rect['y'] + rect['height']  # 元素底部
+            end_y = 50  # 屏幕顶部
 
-            actions.w3c_actions.pointer_action.pause(0.5)
+            # 创建触摸指针
+            pointer = PointerInput(interaction.POINTER_TOUCH, "touch")
+            actions = ActionBuilder(self.driver, mouse=pointer)
 
-            # 移动到结束位置
-            actions.w3c_actions.pointer_action.move_to_location(new_start_x, new_end_y)
-
-            # 释放
-            actions.w3c_actions.pointer_action.pointer_up()
-
-            # 执行所有动作
+            # 从元素底部滑到屏幕顶部
+            actions.pointer_action.move_to_location(center_x, start_y)
+            actions.pointer_action.pointer_down()
+            actions.pointer_action.move_to_location(center_x, end_y)
+            actions.pointer_action.pointer_up()
             actions.perform()
-
             time.sleep(1)
+
+            # 检查同意按钮状态
+            agree_button = self.driver.find_element(By.XPATH, '//XCUIElementTypeButton[@name="阅读并同意"]')
+            if agree_button.is_enabled():
+                print("✅ 同意按钮已可用！滑动完成")
+                agree_button.click()
+                break
 
     def run_steps(self, yaml_path, page_function, **kwargs):
         with open(yaml_path, mode="r", encoding="utf-8") as f:
@@ -328,7 +369,8 @@ class BasePage:
                     result = self.get_toast_text(index)
                     logger.info(f"调用了 get_toast_text 方法 ,获取到的文本是{result}")
                     return result
-
+                elif action == "switch_login_method":
+                    self.switch_login_method(text)
                 else:
                     raise AttributeError(f"你的元素定位交互方法 {action} 没有找到，再检查一下哦！")
             except Exception as e:
@@ -347,8 +389,7 @@ class BasePage:
 
 
 if __name__ == '__main__':
-    ...
-    # basepage = BasePage()
+    basepage = BasePage()
     # p = BasePage.get_yaml_path("main_page.yaml")
     # basepage.run_steps(p, "agree",tel="13012312300.")
     # time.sleep(10)
