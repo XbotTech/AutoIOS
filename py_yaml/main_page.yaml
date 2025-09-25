@@ -1,17 +1,6 @@
-agree:
-  - action: scroll_privacy_agreement
-    locator: ~
-    text: ~
-    index: 4
-    sleep: ~
-  - action: find_and_click
-    locator: [ resource-id, 'com.blink.blinkfocos:id/privacy_confirm_btn' ]
-    text: ~
-    index: ~
-    sleep: ~
 goto_my_page:
   - action: find_and_click  # 需要调用的   封装在base_page 里面的定位交互方法
-    locator: [ XPATH, '//*[@text="账户"]' ]
+    locator: [ XPATH, '//XCUIElementTypeButton[@name="new tabIcon 4 Default"]' ]
     text: ~
     index: ~
     sleep: 1

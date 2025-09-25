@@ -1,18 +1,18 @@
 goto_login_page:
-  - action: find_and_click  # 需要调用的   封装在base_page 里面的定位交互方法
-    locator: [ XPATH, '//*[@text="请登录"]' ]
+  - action: find_and_click
+    locator: [ XPATH, '//XCUIElementTypeButton[@name="请登录"]' ]
     text: ~
     index: ~
     sleep: 1
 get_user_name:
   - action: find
-    locator: [ XPATH, '//*[@content-desc="Edit Avatar"]/following-sibling::android.widget.TextView[1]' ]
+    locator: [ XPATH, '//XCUIElementTypeButton[@name="mine edit icon"]/following-sibling::XCUIElementTypeButton[1]' ]
     text: ~
     index: ~
-    sleep: 1
-my_page_toast_text:
-  - action: get_toast_text
-    locator: ~
-    text: ~
-    index: 5
-    sleep: ~
+    sleep: 2
+#my_page_toast_text:
+#  - action: get_toast_text
+#    locator: ~
+#    text: ~
+#    index: 5
+#    sleep: ~

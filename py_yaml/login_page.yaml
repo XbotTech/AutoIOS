@@ -1,34 +1,39 @@
 switch_password_login:
-  - action: get_current_auth_mode
-    locator: [ resource-id, 'com.blink.blinkfocos:id/type_login' ]
-    text: '密码'
+  - action: switch_login_method
+    locator: ~
+    text: '验证码'
     index: ~
     sleep: 1
 num_pwd_login:
   - action: find_and_send
-    locator: [ resource-id, 'com.blink.blinkfocos:id/content' ]
+    locator: [ xpath, '//XCUIElementTypeTextField[@value="手机号"]' ]
     text: $phone
     index: ~
-    sleep: 1
+    sleep: 2
   - action: find_and_send
-    locator: [ resource-id, 'com.blink.blinkfocos:id/ver_code' ]
+    locator: [ xpath, '//XCUIElementTypeSecureTextField[@value="密码"]' ]
     text: $pwd
     index: ~
-    sleep: ~
+    sleep: 2
   - action: find_and_click
-    locator: [ resource-id, 'com.blink.blinkfocos:id/bt_confirm' ]
-    text: ~
-    index: ~
-    sleep: ~
-xbg_agree:
-  - action: find_and_click
-    locator: [ resource-id, 'com.blink.blinkfocos:id/agree_continue' ]
+    locator: [ xpath, '//XCUIElementTypeButton[@name="登录"]' ]
     text: ~
     index: ~
     sleep: 1
+xbg_agree:
+  - action: find_and_click
+    locator: [ xpath, '	//XCUIElementTypeButton[@name="同意并继续"]' ]
+    text: ~
+    index: ~
+    sleep: 2
+  - action: find_and_click
+    locator: [ xpath, '	//XCUIElementTypeButton[@name="登录"]' ]
+    text: ~
+    index: ~
+    sleep: 2
 is_button_enabled:
   - action: find
-    locator: [ resource-id, 'com.blink.blinkfocos:id/bt_confirm' ]
+    locator: [ xpath, '//XCUIElementTypeButton[@name="登录"]' ]
     text: ~
     index: ~
     sleep: 1
