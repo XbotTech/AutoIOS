@@ -1,6 +1,6 @@
 import time
 
-from selenium.webdriver.common.by import By
+from appium.webdriver.common.appiumby import AppiumBy as By
 from common.log import Logger
 
 
@@ -18,9 +18,7 @@ def handle_black(fun):
         #     return fun(*args, **kwargs)
 
         # 原有黑名单逻辑（仅处理非Toast函数）
-        black_list = [(By.XPATH, "//android.widget.ImageView[@content-desc='Close']"),
-                      (By.ID, "com.android.permissioncontroller:id/permission_allow_foreground_only_button"),
-                      (By.ID, "com.android.permissioncontroller:id/permission_allow_button")]
+        black_list = [(By.XPATH, '//XCUIElementTypeButton[@name="Frame"]')]
         by_self = args[0]
 
         try:
