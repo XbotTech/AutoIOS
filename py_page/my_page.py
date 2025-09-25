@@ -14,7 +14,7 @@ class MyPage(BasePage):
     def get_user_name(self):
         ele = self.run_steps(self.yaml_path, "get_user_name")
         name = ele.text
-        return name, self.my_page_toast_text()
+        return name
 
     def my_page_toast_text(self):
         toast_text = self.run_steps(self.yaml_path, "my_page_toast_text")
