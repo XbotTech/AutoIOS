@@ -22,9 +22,9 @@ logging = Logger(__name__).get_logger()
 class BlackListConfig:
     """黑名单配置类"""
     DEFAULT_BLACK_LIST = [
-        (By.XPATH, '//XCUIElementTypeButton[@name="Frame"]'),
+        (By.XPATH, '//XCUIElementTypeButton[@name="Frame"]'),]
         # 可以添加更多默认黑名单元素
-    ]
+
 
     def __init__(self, black_list: List[Tuple] = None, retry_delay: float = 1.0, max_retries: int = 1):
         self.black_list = black_list or self.DEFAULT_BLACK_LIST
